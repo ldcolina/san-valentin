@@ -1,7 +1,9 @@
 <mat-card class="vale-card">
-  <mat-card-title>💖 ¡Tu Vale de Amor! 💖</mat-card-title>
+  <mat-card-title>💌 ¡Tu Vale de Amor! 💌</mat-card-title>
   <mat-card-content>
-    <p>{{ valeActual }}</p>
+    <div [@rasparAnimation]="valeState" class="vale-text">
+      {{ valeActual }}
+    </div>
     <button mat-raised-button color="primary" (click)="generarVale()">Raspar</button>
   </mat-card-content>
 </mat-card>

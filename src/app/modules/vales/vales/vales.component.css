@@ -27,3 +27,12 @@ button:hover {
   background-color: #ff7eb3;
   color: white;
 }
+
+.vale-text {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 1s ease-out, color 1s ease-out;
+  background: linear-gradient(to bottom, #ccc, #eee); /* Capa simulada de raspado */
+}
