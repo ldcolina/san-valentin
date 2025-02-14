@@ -5,5 +5,6 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'poemas', loadChildren: () => import('./modules/poemas/poemas.module').then(m => m.PoemasModule) },
   { path: 'vales', loadChildren: () => import('./modules/vales/vales.module').then(m => m.ValesModule) },
+  { path: 'estudio-amor', loadChildren: () => import('./modules/estudio-amor/estudio-amor.module').then(m => m.EstudioAmorModule) },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

@@ -1,6 +1,19 @@
 .cards-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-content: stretch;
     gap: 20px;  /* Esto agregará un espacio de 20px entre cada tarjeta */
     margin-top: 20px;
   }
+  
+.hero-section {
+  text-align: center; /* Centrar el texto */
+  color: white; /* Texto en blanco */
+  padding: 20px; /* Espaciado */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.quotes-section {
+  color: white; /* Texto en blanco */
+  padding: 20px; /* Espaciado */
+  border-radius: 10px; /* Bordes redondeados */
+}

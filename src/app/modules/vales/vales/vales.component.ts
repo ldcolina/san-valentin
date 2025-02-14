@@ -14,7 +14,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   animations: [
     trigger('rasparAnimation', [
       state('oculto', style({
-        background: 'linear-gradient(to bottom, #ccc, #eee)',  // Color simulando la capa para raspar
+        background: 'linear-gradient(to bottom,rgba(255, 0, 0, 0.48),rgba(255, 0, 0, 0.52))',  // Color simulando la capa para raspar
         color: 'transparent',  // El texto es invisible al principio
         transform: 'translateY(0)',
       })),
