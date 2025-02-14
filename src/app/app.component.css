@@ -1,6 +1,9 @@
 /* Contenedor general */
 .container {
-    height: 100vh;
+  background-image: url('assets/valentine_background_28c.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   }
   
   /* Estilo del menú lateral */

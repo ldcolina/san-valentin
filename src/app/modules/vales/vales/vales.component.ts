@@ -1,20 +1,22 @@
 import { Component } from '@angular/core';
+import { ValeService } from '../../../services/vale.service';
+import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-vale',
+  standalone: true,
+  imports: [CommonModule, MatButtonModule, MatCardModule],
   templateUrl: './vales.component.html',
   styleUrls: ['./vales.component.css']
 })
 export class ValesComponent {
-  vales: string[] = [
-    "Vale por un beso 💋",
-    "Vale por una cena romántica 🍷",
-    "Vale por un día de películas juntos 🎬"
-  ];
   valeActual: string = "Raspa para ver tu vale 💌";
 
+  constructor(private valeService: ValeService) {}
+
   generarVale() {
-    const indice = Math.floor(Math.random() * this.vales.length);
-    this.valeActual = this.vales[indice];
+    this.valeActual = this.valeService.obtenerVale();
   }
 }

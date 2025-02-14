@@ -1,20 +1,18 @@
 <mat-sidenav-container class="container">
-    <!-- Menú lateral -->
-    <mat-sidenav mode="side" opened class="sidebar">
-      <mat-toolbar color="primary">Menú</mat-toolbar>
-      <mat-nav-list>
-        <a mat-list-item routerLink="/">🏠 Inicio</a>
-        <a mat-list-item routerLink="/poemas">📜 Poemas</a>
-        <a mat-list-item routerLink="/vales">🎟️ Vales</a>
-      </mat-nav-list>
-    </mat-sidenav>
-  
-    <!-- Contenido principal -->
-    <mat-sidenav-content class="content">
-      <mat-toolbar color="primary">San Valentín</mat-toolbar>
-      <div class="page-content">
-        <router-outlet></router-outlet>
-      </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-  
+  <!-- Menú lateral -->
+  <mat-sidenav mode="side" opened class="sidebar">
+    <mat-toolbar color="primary">❤️ Menú San Valentín</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" routerLinkActive="active">🏠 Inicio</a>
+      <a mat-list-item routerLink="/poemas" routerLinkActive="active">📜 Generador de Poemas</a>
+      <a mat-list-item routerLink="/vales" routerLinkActive="active">🎟️ Rifa de Vales</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Contenido principal -->
+  <mat-sidenav-content class="content">
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

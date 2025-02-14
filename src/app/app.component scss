@@ -1,0 +1,45 @@
+.container {
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #fce4ec; // Rosa claro
+  color: #880e4f; // Vino tinto
+}
+
+.sidebar mat-toolbar {
+  background-color: #ad1457; // Color primario fuerte
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+mat-nav-list a {
+  text-decoration: none;
+  color: #880e4f; // Color de enlaces
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+mat-nav-list a:hover {
+  background: rgba(255, 105, 180, 0.2); // Efecto hover
+}
+
+.active {
+  background: #e91e63 !important; // Color cuando la página está activa
+  color: white !important;
+}
+
+.content {
+  background-color: #fff5f8; // Fondo sutil
+  min-height: 100vh;
+  padding: 16px;
+}
+
+mat-toolbar {
+  font-size: 20px;
+  font-weight: bold;
+}

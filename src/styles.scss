@@ -1,0 +1,52 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Definir la paleta de colores personalizada
+$custom-primary: mat.define-palette(mat.$pink-palette, 500);
+$custom-accent: mat.define-palette(mat.$purple-palette, A200);
+$custom-warn: mat.define-palette(mat.$red-palette);
+
+// Definir el tema con estas paletas
+$custom-theme: mat.define-light-theme((
+  color: (
+    primary: $custom-primary,
+    accent: $custom-accent,
+    warn: $custom-warn,
+  )
+));
+
+@include mat.all-component-themes($custom-theme);
+
+// Estilos globales
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fce4ec; // Rosa claro
+    color: #880e4f; // Texto en vino tinto
+  }
+  
+  .sidebar mat-toolbar {
+    background-color: #ad1457; // Color más oscuro
+    color: white;
+  }
+  
+  mat-nav-list a {
+    color: #880e4f;
+    font-weight: bold;
+  }
+  
+  mat-nav-list a:hover {
+    background: rgba(255, 105, 180, 0.3); // Efecto hover en rosa
+  }
+  
+  .active {
+    background: #e91e63 !important; // Resaltar la opción activa
+    color: white !important;
+  }
+  
