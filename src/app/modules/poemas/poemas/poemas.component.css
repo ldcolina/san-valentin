@@ -1,0 +1,19 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .tarjeta {
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    font-size: 1.2em;
+    font-family: 'Georgia', serif;
+  }
+  

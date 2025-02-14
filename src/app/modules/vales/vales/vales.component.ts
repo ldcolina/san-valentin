@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-vale',
-  templateUrl: './vale.component.html',
-  styleUrls: ['./vale.component.css']
+  templateUrl: './vales.component.html',
+  styleUrls: ['./vales.component.css']
 })
-export class ValeComponent {
+export class ValesComponent {
   vales: string[] = [
     "Vale por un beso 💋",
     "Vale por una cena romántica 🍷",
