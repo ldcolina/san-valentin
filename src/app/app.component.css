@@ -1,0 +1,19 @@
+/* Contenedor general */
+.container {
+    height: 100vh;
+  }
+  
+  /* Estilo del menú lateral */
+  .sidebar {
+    width: 250px;
+  }
+  
+  /* Espacio para el contenido */
+  .content {
+    padding: 20px;
+  }
+  
+  .page-content {
+    margin: 20px;
+  }
+  
