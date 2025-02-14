@@ -1,6 +1,6 @@
 /* Contenedor general */
 .container {
-  background-image: url('assets/valentine_background_28c.jpg');
+  background-image: url('/assets/valentine_background_28c.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;

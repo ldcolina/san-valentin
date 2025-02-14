@@ -20,5 +20,5 @@ import { MatListModule } from '@angular/material/list';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'san-valentin';
+  title = 'San Valentin';
 }

@@ -1,0 +1,13 @@
+ng serve -o
+ng serve --port 5800 -o
+
+ng g m (ruta/nombre del modulo)
+ng g c (ruta/nombre del componente)
+ng g class (ruta/nombre de la clase)
+
+ng add @angular/material
+directory /src/
+
+npm install karma karma-chrome-launcher karma-jasmine karma-jasmine-html-reporter --save-dev
+
+ng build
